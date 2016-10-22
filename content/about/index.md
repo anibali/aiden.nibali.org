@@ -6,7 +6,6 @@ draft = false
 comments = false
 categories = ["about"]
 showpagemeta = false
-
 +++
 
 This page is under construction.

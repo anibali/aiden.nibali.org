@@ -26,6 +26,7 @@ intro = "Deep learning PhD student"
 description = "La Trobe University, Australia"
 authorImage = "headshot.jpg"
 dateFormat = "Jan 2, 2006"
+customCSS = ["css/custom.css"]
 
 ## Site Meta Settings
 # [params.meta]
@@ -46,16 +47,21 @@ email = "aiden@nibali.org"
 [params.extra]
 copyright = "© 2016. Aiden Nibali. All rights reserved."
 poweredBy = true
-hightlightJS = true
+highlightJS = true
 
 ## Main Menu
 [[menu.main]]
-    name = "blog"
-    weight = 100
-    identifier = "blog"
-    url = "/blog/"
+name = "blog"
+weight = 100
+identifier = "blog"
+url = "/blog/"
+# [[menu.main]]
+# name = "about"
+# identifier = "about"
+# weight = 200
+# url = "/about/"
 [[menu.main]]
-    name = "about"
-    identifier = "about"
-    weight = 200
-    url = "/about/"
+name = "portfolio"
+identifier = "portfolio"
+weight = 300
+url = "/portfolio/"

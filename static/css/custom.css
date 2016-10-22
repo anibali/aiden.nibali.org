@@ -1,0 +1,25 @@
+/* Mobile phone display (3:5, eg 480x800) */
+.mobile-frame {
+  background-image: url(/img/mobile_frame.svg);
+  background-size: 100% 100%;
+}
+.mobile-frame img {
+  margin: 20.92% 9.18% 38.52% 9.18%;
+  width: 81.63%;
+  border: 1px solid #ccc;
+}
+
+/* Tablet display (16:10, eg 1280x800) */
+.tablet-frame {
+  background-image: url(/img/tablet_frame.svg);
+  background-size: 100% 100%;
+}
+.tablet-frame img {
+  margin: 5.31%;
+  width: 89.39%;
+  border: 1px solid #ccc;
+}
+
+.hljs {
+  background: none;
+}
