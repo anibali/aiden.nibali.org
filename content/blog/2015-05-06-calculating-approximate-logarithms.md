@@ -24,14 +24,14 @@ Here I will outline an algorithm for calculating approximate base 2 logs
 quickly, focusing on an implementation for microprocessors. Code
 examples are in Ruby for ease of reading.
 
-### Course grain
+### Coarse grain
 
 Calculating the integer base 2 log of a number is as simple as finding the
 position of its most-significant '1' bit. This is a happy result of how the
 binary system of representing numbers works, and it shouldn't require too much
 thought for you to convince yourself that this is indeed the case.
 
-So, to calculate a course log, all we need to do is find the position of the
+So, to calculate a coarse log, all we need to do is find the position of the
 highest set bit!
 
 You might already be thinking of a few ways to do this:
@@ -40,18 +40,18 @@ You might already be thinking of a few ways to do this:
 # String conversion technique
 number = 342
 binary = number.to_s(2)
-course_log = binary.length - 1
+coarse_log = binary.length - 1
 ```
 
 ```ruby
 # Bit shifting technique
 number = 342
-course_log = 0
+coarse_log = 0
 while number != 0
-  course_log += 1
+  coarse_log += 1
   number >>= 1
 end
-course_log -= 1
+coarse_log -= 1
 ```
 
 Definitely avoid using the first technique, and you probably shouldn't use the
@@ -68,20 +68,20 @@ bsr RAX, number;
 
 ### Improving precision
 
-In the previous section we demonstrated that a course log can taken using a
+In the previous section we demonstrated that a coarse log can taken using a
 single assembly instruction. This might be enough for some applications, but
 many others will require a little more precision.
 
 To achieve more precision in our results we will use *n* bits following the
 most significant '1' as a key to a lookup table. The value from the lookup
-table will be added to our course log to get a more precise result. The larger
+table will be added to our coarse log to get a more precise result. The larger
 the value of *n* the more precise the result, but be aware that the size of
 the lookup table grows exponentially (it will have 2<sup>n</sup> entries).
 
 ```ruby
 n = 5
-key = (number & ~(1 << course_log)) >> (course_log - n)
-refined_log = course_log + lookup_table[key]
+key = (number & ~(1 << coarse_log)) >> (coarse_log - n)
+refined_log = coarse_log + lookup_table[key]
 ```
 
 Fantastic! But what is `lookup_table`?
@@ -113,16 +113,16 @@ end
 def fast_log(number)
   # No inline assembly for Ruby, use bitshifts to find highest set bit
   tmp = number
-  course_log = 0
+  coarse_log = 0
   while tmp != 0
-    course_log += 1
+    coarse_log += 1
     tmp >>= 1
   end
-  course_log -= 1
+  coarse_log -= 1
 
   # Improve precision
-  key = (number & ~(1 << course_log)) >> (course_log - N)
-  refined_log = course_log + LOOKUP_TABLE[key]
+  key = (number & ~(1 << coarse_log)) >> (coarse_log - N)
+  refined_log = coarse_log + LOOKUP_TABLE[key]
 
   return refined_log
 end
