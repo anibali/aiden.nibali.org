@@ -23,3 +23,7 @@
 .hljs {
   background: none;
 }
+
+a, a:hover, a:visited, a:link, .social, .social a {
+    color: #0059b3;
+}

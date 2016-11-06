@@ -18,6 +18,7 @@ theme = "hugo-goa"
 #disqusShortname = "<yourDisqusShortName>" # Comment out to disable Disqus.
 #googleAnalytics = "XYZ"
 enableRobotsTXT = true
+#footnotereturnlinkcontents = "↩"
 
 ## Site Settings
 [params]
