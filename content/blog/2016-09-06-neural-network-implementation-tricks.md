@@ -101,7 +101,7 @@ mode or evaluation mode appropriately.
 ### Non-linearities
 
 Ensure that each weighted layer (convolution, fully connected) is followed by
-a non-linearity.
+a non-linearity, except for the last one which will depend on your task.
 
 Use ReLU (rectified linear unit) or something from that family
 (leaky ReLU, ELU). Only use tanh or
