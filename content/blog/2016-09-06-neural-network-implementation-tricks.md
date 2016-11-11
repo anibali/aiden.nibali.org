@@ -62,6 +62,22 @@ In Torch, use
 for multi-class classification so that
 you don't need to explicitly add a LogSoftMax layer to your network.
 
+### Non-linearities
+
+Ensure that each weighted layer (convolution, fully connected) is followed by
+a non-linearity, except for the last one which will depend on your task.
+
+Use ReLU (rectified linear unit) or something from that family
+(leaky ReLU, ELU). Only use tanh or
+sigmoid when you need to explicitly squash values into the (-1, 1) or (0, 1)
+numeric range respectively. Apply non-linearities in place to save memory when
+possible.
+
+```lua
+-- Create an in-place ReLU layer.
+local relu = nn.ReLU(true)
+```
+
 ### Batch normalisation
 
 Batch normalisation[^batch-norm] makes training a lot easier (less dependent on
@@ -97,22 +113,6 @@ inserted after batch normalisation. Common dropout values are 0.2 (weak) and 0.5
 
 As with batch normalisation, ensure that you set your network to be in training
 mode or evaluation mode appropriately.
-
-### Non-linearities
-
-Ensure that each weighted layer (convolution, fully connected) is followed by
-a non-linearity, except for the last one which will depend on your task.
-
-Use ReLU (rectified linear unit) or something from that family
-(leaky ReLU, ELU). Only use tanh or
-sigmoid when you need to explicitly squash values into the (-1, 1) or (0, 1)
-numeric range respectively. Apply non-linearities in place to save memory when
-possible.
-
-```lua
--- Create an in-place ReLU layer.
-local relu = nn.ReLU(true)
-```
 
 ### Optimisation algorithm
 
