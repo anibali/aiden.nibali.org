@@ -49,6 +49,7 @@ email = "aiden@nibali.org"
 copyright = "© 2016. Aiden Nibali. All rights reserved."
 poweredBy = true
 highlightJS = true
+mathjax = true
 
 ## Main Menu
 [[menu.main]]
