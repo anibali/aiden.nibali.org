@@ -87,7 +87,7 @@ of InfoGAN (see the [pdist folder](https://github.com/anibali/infogan/tree/maste
 ### Do we even need special criteria?
 
 I believe that we can simply use tried and true criteria like
-`nn.MSECriterion` and `nn.NLLCriterion` instead of diving deep into custom NLL
+`nn.MSECriterion` and `nn.ClassNLLCriterion` instead of diving deep into custom NLL
 mumbo-jumbo. In fact, I have tried this and the results appear just as good.
 Why does this work? Well, let's consider some distributions we could select for
 salient variables.
@@ -102,7 +102,7 @@ Here we have $n$ discrete variables, of which one is set to 1 and the rest are
 problems.
 
 This one is easy, since minimizing the NLL is what we do for
-classification anyway - it even says so on the tin (`nn.NLLCriterion`). Just
+classification anyway - it even says so on the tin (`nn.ClassNLLCriterion`). Just
 use this, it's the same.
 
 #### Gaussian
