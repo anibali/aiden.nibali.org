@@ -55,17 +55,17 @@ information:
 <p>
 \begin{align*}
  I(C;X) &= H(C)-H(C|X)\\
- &= H(C)-\mathbb{E}_{X}[H(C|x)]\\
- &= H(C)-\mathbb{E}_{X}[H(p(C|x),q(C|x))-D_{KL}(p(\cdot|x)||q(\cdot|x))]\\
- &= H(C)+\mathbb{E}_{X}[D_{KL}(p(\cdot|x)||q(\cdot|x))]-\mathbb{E}_{X}[H(p(C|x),q(C|x))]\\
- &= H(C)+\mathbb{E}_{X}[D_{KL}(p(\cdot|x)||q(\cdot|x))]+\mathbb{E}_{X}[\mathbb{E}_{C|X}[\log q(c|x)]]\\
- &= H(C)+\mathbb{E}_{X}[D_{KL}(p(\cdot|x)||q(\cdot|x))]+\mathbb{E}_{X,C}[\log q(c|x)]\\
- & \ge H(C)+\mathbb{E}_{X,C}[\log q(c|x)]\\
+ &= H(C)-\mathbb{E}_{X}[H(C|X)]\\
+ &= H(C)-\mathbb{E}_{X}[H(p(\cdot|X),q(\cdot|X))-D_{KL}(p(\cdot|X)||q(\cdot|X))]\\
+ &= H(C)+\mathbb{E}_{X}[D_{KL}(p(\cdot|X)||q(\cdot|X))]-\mathbb{E}_{X}[H(p(\cdot|X),q(\cdot|X))]\\
+ &= H(C)+\mathbb{E}_{X}[D_{KL}(p(\cdot|X)||q(\cdot|X))]+\mathbb{E}_{X}[\mathbb{E}_{C|X}[\log q(C|X)]]\\
+ &= H(C)+\mathbb{E}_{X}[D_{KL}(p(\cdot|X)||q(\cdot|X))]+\mathbb{E}_{X,C}[\log q(C|X)]\\
+ & \ge H(C)+\mathbb{E}_{X,C}[\log q(C|X)]\\
 \end{align*}
 </p>
 
 This tells us that we can maximize the
-mutual information $I(C;X)$ by maximizing $\mathbb{E}_{X,C}[\log q(c|x)]$. That
+mutual information $I(C;X)$ by maximizing $\mathbb{E}_{X,C}[\log q(C|X)]$. That
 is, we want to minimize the negative log likelihood (NLL) of $q(C|X)$, our
 discriminator approximation of the true posterior distribution $p(C|X)$.
 In order to do this we need to be able to jointly sample from $C$ (easy since we
