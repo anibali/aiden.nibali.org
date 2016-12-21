@@ -27,3 +27,8 @@
 a, a:hover, a:visited, a:link, .social, .social a {
     color: #0059b3;
 }
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 4px;
+}

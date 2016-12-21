@@ -1,0 +1,18 @@
+set terminal svg size 600,300
+set output "bimodal.svg"
+set key on
+set xrange [0:3]
+set yrange [0:2.4]
+set xlabel "x"
+set ylabel "probability"
+
+gauss(x,mu,sigma) = 1./(sigma*sqrt(2*pi)) * exp( -(x-mu)**2 / (2*sigma**2) )
+
+q(x) = 0.7*gauss(x, 1, 0.2) + 0.3*gauss(x, 2, 0.3)
+p1(x) = gauss(x, 1, 0.2)
+p2(x) = gauss(x, 1.4, 0.4)
+
+beta = 0.5
+plot q(x) with lines lw 4 lc rgb "#000004" title "Actual distribution", \
+     p1(x) with lines lw 4 lc rgb "#fb8761" title "Mode-seeking approximation", \
+     p2(x) with lines lw 4 lc rgb "#8761fb" title "Mode-covering approximation"
