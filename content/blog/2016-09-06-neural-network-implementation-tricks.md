@@ -15,12 +15,6 @@ showpagemeta = true
 slug = ""
 +++
 
-Implementing neural networks can be intimidating at the start, with a daunting
-number of choices to make with no real sense of which option might work best.
-By listing my (opinionated) defaults found from experience, I hope to provide
-you, dear reader, with a starting point from which you can train a successful
-neural network.
-
 Snippets of code are shown for [Torch](http://torch.ch/), but most of these
 ideas are applicable to any neural network framework.
 

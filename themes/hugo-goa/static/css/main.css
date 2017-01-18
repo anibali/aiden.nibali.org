@@ -78,6 +78,15 @@ div.content
 
     color: #777;
 }
+div.page-description
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+
+    color: #777;
+}
 .copyright
 {
     font-family: 'Roboto', sans-serif;
