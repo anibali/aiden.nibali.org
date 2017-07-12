@@ -10,6 +10,8 @@ showpagemeta = false
 
 ## Papers
 
+{{< orcid-link >}}
+
 ### Extraction and classification of diving clips from continuous video footage
 
 A video analysis system for athletic diving with large deep learning components.

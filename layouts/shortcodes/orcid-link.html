@@ -1,0 +1,11 @@
+{{ if len .Params | eq 1 }}
+<a href="https://orcid.org/{{ .Get 0 }}">
+  <i class="ai ai-orcid" aria-hidden="true"></i>
+  orcid.org/{{ .Get 0 }}
+</a>
+{{ else }}
+<a href="https://orcid.org/{{ .Site.Params.social.orcid }}">
+  <i class="ai ai-orcid" aria-hidden="true"></i>
+  orcid.org/{{ .Site.Params.social.orcid }}
+</a>
+{{ end }}
