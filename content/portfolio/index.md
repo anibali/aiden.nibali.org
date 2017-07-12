@@ -8,10 +8,71 @@ categories = ["portfolio"]
 showpagemeta = false
 +++
 
-This page contains brief descriptions for some of the projects that I've worked
-on in the past.
+## Papers
 
-## RatTrace
+### Extraction and classification of diving clips from continuous video footage
+
+A video analysis system for athletic diving with large deep learning components.
+The model is able to extract action clips, track athletes, and classify the
+type of dive performed.
+
+```bibtex
+@inproceedings{nibali2017extraction,
+  title={Extraction and Classification of Diving Clips from Continuous Video Footage},
+  author={Nibali, Aiden and He, Zhen and Morgan, Stuart and Greenwood, Daniel},
+  booktitle={3rd International Workshop on Computer Vision in Sports at CVPR 2017},
+  year={2017}
+}
+```
+
+[Full text](https://arxiv.org/pdf/1705.09003.pdf)
+
+### Pulmonary nodule classification with deep residual networks
+
+Application of a deep learning classifier to subjective malignancy prediction
+of lung cancer nodules. The model is able to approximate the predictive power
+of a human radiologist ensemble.
+
+```bibtex
+@article{nibali2017pulmonary,
+  title={Pulmonary nodule classification with deep residual networks},
+  author={Nibali, Aiden and He, Zhen and Wollersheim, Dennis},
+  journal={International Journal of Computer Assisted Radiology and Surgery},
+  pages={1--10},
+  year={2017},
+  publisher={Springer International Publishing}
+}
+```
+
+[Journal link](https://link.springer.com/article/10.1007%2Fs11548-017-1605-6)
+|
+[Full text](http://homepage.cs.latrobe.edu.au/zhe/files/Pulmonary_nodule.pdf)
+
+### Trajic: An effective compression system for trajectory data
+
+A compression algorithm designed for GPS trajectory data. The algorithm is able
+operate in lossy and lossless modes.
+
+```bibtex
+@article{nibali2015trajic,
+  title={Trajic: An effective compression system for trajectory data},
+  author={Nibali, Aiden and He, Zhen},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={27},
+  number={11},
+  pages={3138--3151},
+  year={2015},
+  publisher={IEEE}
+}
+```
+
+[Journal link](http://ieeexplore.ieee.org/document/7112156/)
+|
+[Full text](http://homepage.cs.latrobe.edu.au/zhe/files/trajic.pdf)
+
+## Projects
+
+### RatTrace
 
 RatTrace is the intelligent rat trap monitoring system which I developed for my
 final year undergraduate engineering project. It works by measuring rat bait
@@ -32,7 +93,7 @@ need to physically check each trap on location.
 
 ***
 
-## 1000WAT website
+### 1000WAT website
 
 [1000WAT](http://1000wat.com.au) is a Thai food restaurant based in Melbourne's
 CBD. I created a new website for 1000WAT with a focus on responsive design and
@@ -53,7 +114,7 @@ jQuery and Twitter Bootstrap providing a good client-side user experience.
 
 ***
 
-## Self-balancing robot
+### Self-balancing robot
 
 This robot is able to balance itself on two wheels. The project involved
 laying out a PCB using Altium Designer, soldering the manufactured circuit board,
@@ -67,7 +128,7 @@ and writing the embedded C code required to make it balance.
 
 ***
 
-## Seed-dropping robot
+### Seed-dropping robot
 
 The seed-dropping robot was created as an entrant for the 2014
 [National Instruments Autonomous Robotics Commpetition](http://australia.ni.com/ni-arc).
@@ -85,7 +146,7 @@ was a finalist in the 2014 NI ARC competition.
 
 ***
 
-## Home Guardian
+### Home Guardian
 
 Home Guardian is a home monitoring system designed for people who live alone and
 are at an increased risk of falling victim to an injury or illness in and around
@@ -102,7 +163,7 @@ and won 1st place in Telstra's inaugral M2M University Challenge in 2013.
 
 ***
 
-## MediCom
+### MediCom
 
 MediCom is a real-time communication system designed for use in the medical
 sector. It makes use of WebRTC for video conferencing capabilities and runs on
