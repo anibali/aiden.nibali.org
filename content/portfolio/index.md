@@ -10,26 +10,36 @@ showpagemeta = false
 
 ## Papers
 
-{{< orcid-link >}}
+Author ORCID: {{< orcid-link >}}
 
 ### Extraction and classification of diving clips from continuous video footage
+
+[Publisher link](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w2/html/Nibali_Extraction_and_Classification_CVPR_2017_paper.html)
+|
+[Full text](https://arxiv.org/pdf/1705.09003.pdf)
 
 A video analysis system for athletic diving with large deep learning components.
 The model is able to extract action clips, track athletes, and classify the
 type of dive performed.
 
+<i class="fa fa-trophy" aria-hidden="true"></i> [Best paper award](http://www.vap.aau.dk/cvsports/).
+
 ```bibtex
 @inproceedings{nibali2017extraction,
-  title={Extraction and Classification of Diving Clips from Continuous Video Footage},
-  author={Nibali, Aiden and He, Zhen and Morgan, Stuart and Greenwood, Daniel},
-  booktitle={3rd International Workshop on Computer Vision in Sports at CVPR 2017},
-  year={2017}
+  author = {Nibali, Aiden and He, Zhen and Morgan, Stuart and Greenwood, Daniel},
+  title = {Extraction and Classification of Diving Clips From Continuous Video Footage},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  pages={38--48},
+  month = {July},
+  year = {2017}
 }
 ```
 
-[Full text](https://arxiv.org/pdf/1705.09003.pdf)
-
 ### Pulmonary nodule classification with deep residual networks
+
+[Publisher link](https://link.springer.com/article/10.1007%2Fs11548-017-1605-6)
+|
+[Full text](http://homepage.cs.latrobe.edu.au/zhe/files/Pulmonary_nodule.pdf)
 
 Application of a deep learning classifier to subjective malignancy prediction
 of lung cancer nodules. The model is able to approximate the predictive power
@@ -46,11 +56,11 @@ of a human radiologist ensemble.
 }
 ```
 
-[Journal link](https://link.springer.com/article/10.1007%2Fs11548-017-1605-6)
-|
-[Full text](http://homepage.cs.latrobe.edu.au/zhe/files/Pulmonary_nodule.pdf)
-
 ### Trajic: An effective compression system for trajectory data
+
+[Publisher link](http://ieeexplore.ieee.org/document/7112156/)
+|
+[Full text](http://homepage.cs.latrobe.edu.au/zhe/files/trajic.pdf)
 
 A compression algorithm designed for GPS trajectory data. The algorithm is able
 operate in lossy and lossless modes.
@@ -67,10 +77,6 @@ operate in lossy and lossless modes.
   publisher={IEEE}
 }
 ```
-
-[Journal link](http://ieeexplore.ieee.org/document/7112156/)
-|
-[Full text](http://homepage.cs.latrobe.edu.au/zhe/files/trajic.pdf)
 
 ## Projects
 
