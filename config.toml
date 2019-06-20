@@ -47,7 +47,7 @@ email = "aiden@nibali.org"
 
 ## Extras
 [params.extra]
-copyright = "© 2016. Aiden Nibali. All rights reserved."
+copyright = "© Aiden Nibali. All rights reserved."
 poweredBy = true
 highlightJS = true
 mathjax = true
