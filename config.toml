@@ -1,6 +1,6 @@
 ## Basic Configuration
 
-baseurl = "http://aiden.nibali.org/"
+baseurl = "/"
 builddrafts = false
 canonifyurls = false
 languageCode = "en-US"

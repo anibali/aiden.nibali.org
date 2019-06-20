@@ -12,12 +12,11 @@
 
 <title>{{ .Site.Title }}</title>
 
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 
-{{ if .RSSlink }}
-  <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  <link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-{{ end }}
+{{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end -}}
 
 {{ if .Site.Params.extra.highlightJS }}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
@@ -30,7 +29,7 @@
 <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
 
 {{ range .Site.Params.customCSS }}
-  <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+  <link rel="stylesheet" href="{{ . | absURL }}">
 {{ end }}
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
