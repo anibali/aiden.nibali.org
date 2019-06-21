@@ -167,8 +167,9 @@ $$
 $$
 
 This formula works regardless of how examples from dataset $A$ are distributed
-amongst classes. However, if we know that the training data was resampled such
-that the classes are uniformly distributed, we can make one last simplification:
+amongst classes. However, since we know that the training data was resampled
+such that the classes are uniformly distributed, we can make one last
+simplification by cancelling the constant dataset $A$ class probability terms:
 
 $$
 {\Pr}_B(C_k|\boldsymbol{x})
