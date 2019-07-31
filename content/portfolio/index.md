@@ -12,6 +12,42 @@ showpagemeta = false
 
 Author ORCID: {{< orcid-link >}}
 
+### 3D human pose estimation with 2D marginal heatmaps
+
+[Publisher link](https://ieeexplore.ieee.org/document/8658906)
+|
+[Full text](https://arxiv.org/pdf/1806.01484.pdf)
+
+A system for estimating 3D human joint locations from monocular
+images.
+
+```bibtex
+@inproceedings{nibali2019margipose,
+  title={3D Human Pose Estimation with 2D Marginal Heatmaps},
+  author={Nibali, Aiden and He, Zhen and Morgan, Stuart and Prendergast, Luke},
+  booktitle={2019 IEEE Winter Conference on Applications of Computer Vision (WACV)},
+  pages={1477-1485},
+  year={2019},
+  doi={10.1109/WACV.2019.00162}
+}
+```
+
+### Numerical coordinate regression with convolutional neural networks
+
+[Full text](https://arxiv.org/pdf/1801.07372.pdf)
+
+A comparison of approaches to predicting keypoint locations from images using
+convolutional neural networks.
+
+```bibtex
+@article{nibali2018numerical,
+  title={Numerical Coordinate Regression with Convolutional Neural Networks},
+  author={Nibali, Aiden and He, Zhen and Morgan, Stuart and Prendergast, Luke},
+  journal={arXiv preprint arXiv:1801.07372},
+  year={2018}
+}
+```
+
 ### Extraction and classification of diving clips from continuous video footage
 
 [Publisher link](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w2/html/Nibali_Extraction_and_Classification_CVPR_2017_paper.html)
@@ -22,7 +58,7 @@ A video analysis system for athletic diving with large deep learning components.
 The model is able to extract action clips, track athletes, and classify the
 type of dive performed.
 
-<i class="fa fa-trophy" aria-hidden="true"></i> [Best paper award](http://www.vap.aau.dk/cvsports/).
+<i class="fa fa-trophy" aria-hidden="true"></i> [Best paper award](https://web.archive.org/web/20171101172550/http://www.vap.aau.dk/cvsports/).
 
 ```bibtex
 @inproceedings{nibali2017extraction,
