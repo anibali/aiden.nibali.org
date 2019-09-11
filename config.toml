@@ -23,7 +23,7 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "Aiden Nibali"
-intro = "Research Officer"
+intro = "Postdoctoral Research Officer"
 description = "La Trobe University, Australia"
 authorImage = "headshot.jpg"
 dateFormat = "Jan 2, 2006"
