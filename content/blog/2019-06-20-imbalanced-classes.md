@@ -76,7 +76,7 @@ chance of future millionairism! This is not altogether surprising,
 since during training either class was equally likely. But even so, clearly a
 random child is not so likely to be a millionare in practice!
 
-What we want to do is incorporate into our predictions prior knowledge of the
+What we want to do is incorporate into our prediction's prior knowledge of the
 likelihood of a random example being in a particular class (following our
 previous example, the probability of a random child becoming a millionaire).
 
