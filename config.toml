@@ -23,8 +23,8 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "Dr Aiden Nibali"
-intro = "Lecturer, Computer Science and Info Tech"
-description = "La Trobe University, Australia"
+intro = "Clinical AI Associate"
+description = "franklin.ai"
 authorImage = "headshot.jpg"
 dateFormat = "Jan 2, 2006"
 customCSS = ["css/custom.css"]
