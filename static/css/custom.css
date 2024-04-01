@@ -24,8 +24,12 @@
   background: none;
 }
 
+pre code.hljs {
+  padding: 0;
+}
+
 a, a:hover, a:visited, a:link, .social, .social a {
-    color: #0059b3;
+  color: #0059b3;
 }
 
 td, th {
@@ -33,10 +37,15 @@ td, th {
   padding: 4px;
 }
 
+pre {
+  background: #23241f;
+  color: #f8f8f2;
+}
+
 pre code {
   white-space: pre;
 }
 
 div.content {
-    color: #333;
+  color: #333;
 }
