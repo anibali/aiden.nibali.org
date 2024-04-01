@@ -36,3 +36,7 @@ td, th {
 pre code {
   white-space: pre;
 }
+
+div.content {
+    color: #333;
+}
