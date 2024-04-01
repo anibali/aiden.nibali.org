@@ -1,2 +1,4 @@
 /public/
 /.netlify/
+/.direnv/
+.hugo_build.lock
