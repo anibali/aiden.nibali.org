@@ -49,3 +49,16 @@ pre code {
 div.content {
   color: #333;
 }
+
+a code {
+  color: inherit;
+  background: none;
+}
+
+.content a {
+  border-bottom: 2px solid #0059b333;
+}
+
+a.footnote-ref {
+  border: none;
+}
