@@ -23,7 +23,7 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "Dr Aiden Nibali"
-intro = "Clinical AI Associate"
+intro = "Senior Machine Learning Engineer"
 description = "franklin.ai"
 authorImage = "headshot.jpg"
 dateFormat = "Jan 2, 2006"
